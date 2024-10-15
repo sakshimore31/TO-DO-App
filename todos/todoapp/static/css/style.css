@@ -1,0 +1,186 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: skyblue;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(227, 217, 217);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+    width: 100%;
+    margin-bottom: 10px; /* Add space between form elements */
+}
+
+.login-container, .register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #232323;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+/* Adjust spacing for "Remember me" and "Forgot password" */
+.two-col input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.two-col label {
+    font-size: 14px;
+}
+
+/* Adjust spacing for "Don't have an account" and "Sign up" */
+p {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Space between text and links */
+p a {
+    color: blue;
+    text-decoration: none;
+    margin-left: 2px; /* Add small margin between link and text */
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit:hover {
+    background-color: darkblue;
+}
+
+
+/* Additional styles for the To-Do container */
+#container {
+    background-color: white;
+    height: 520px;
+    width: 400px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px; /* Added padding inside the container */
+}
+#todoField {
+    width: 260px;
+    height: 40px;
+    border: 2px solid blue;
+    border-radius: 5px;
+    padding-left: 80px;
+}
+#add {
+    width: 60px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#todoItems {
+    width: 100%; /* Make sure it takes full width of the container */
+    overflow-y: auto; /* Scroll vertically if needed */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between items */
+}
+
+.item {
+    width: 100%; /* Full width of the container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Padding on left and right for spacing */
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd; /* Optional: separator between items */
+}
+
+.item p {
+    flex: 1; /* Take up remaining space */
+    margin: 0;
+    word-wrap: break-word; /* Wrap long text */
+}
+
+.controls {
+    display: flex;
+    gap: 10px; /* Space between edit and delete buttons */
+}
+
+.edit, .delete {
+    height: 40px;
+    width: 60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px; /* Adjust font size if necessary */
+}
+.edit {
+    background-color: green;
+}
+.delete {
+    background-color: red;
+}
